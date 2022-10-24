@@ -1,0 +1,22 @@
+<html>
+<head><title>BIOL 527</title></head>
+
+
+<body>
+
+<!---plants: prunus angustifolia, viola affinis, trifolium repens, vicia angustifolia, vicia lathyroides--->
+
+
+<h1>NOTES March 20</h1>
+
+<h2>I. Roseaceae</h2>
+	<ul>
+	<li>leaves stipulate, simple or compound</li>
+	<li>fruit a drupe, pome, follicle, achene, (rarely a capsule), or an aggregate</li>
+	<li>hypanthium or receptacle sometimes ripening with the fruit</li>
+	<li>ovaries superior or inferior</li>
+	<li>carpels distinct or connate</li>
+<h3>subfamilies:</h3>
+<ul>
+<li>Rosoideae</li>
+<li>

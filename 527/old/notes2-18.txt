@@ -1,0 +1,43 @@
+native species/naturalized species
+
+free = distinct
+
+sympetalous corolla = gamopetalous corolla
+
+choripetalous corolla = apopetalous corolla
+
+synsepalous = gamosepalous
+
+calyx tubes, lobes
+corolla tube, lobes
+
+tepals
+
+caducous
+
+actinomorphic = radially symmetric
+zygomorphic = bilaterally symmetric
+bilabiate
+
+androecium
+monadelphous, diadelphous, triadelphous, etc.
+polyadelphous
+
+gynoecium
+carpel
+pistil
+2 or more separate, simple pistils = apocarpous gynoecium (example: Magnolia)
+1 simple pistil = monocarpous gynoecium (example: "green bean")
+compound pistil = syncarpous gynoecium (example: "flowering quince," Stellaria media)
+placentation
+
+ovary position
+superior
+inferior
+
+insertion of floral parts:
+hypogynous
+perigynous
+epigynous 
+
+hypanthium

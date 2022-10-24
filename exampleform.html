@@ -1,0 +1,121 @@
+<html>
+<body>
+
+<script language="JavaScript">
+// <![CDATA[
+function display(obj,id1,id2,id3,id4) {
+txt = obj.options[obj.selectedIndex].value;
+document.getElementById(id1).style.display = 'none';
+document.getElementById(id2).style.display = 'none';
+document.getElementById(id3).style.display = 'none';
+document.getElementById(id4).style.display = 'none';
+if ( txt.match(id1) ) {
+document.getElementById(id1).style.display = 'block';
+}
+if ( txt.match(id2) ) {
+document.getElementById(id2).style.display = 'block';
+}
+if ( txt.match(id3) ) {
+document.getElementById(id3).style.display = 'block';
+}
+if ( txt.match(id4) ) {
+document.getElementById(id4).style.display = 'block';
+}
+}
+// ]]>
+</script>
+
+
+
+
+<center>
+<form id="form" method="post" action="" >
+<!--Select delivery method-->
+   <fieldset style="display:inline">
+	<legend>Preferred delivery method:</legend>
+	<label for="delivery">Preferred delivery method:</label>
+	<select name="delivery" required style="width:184px" onchange="display(this,'both1','both2','pdf','print');">
+		<option value="both1 | both2">both</option>
+		<option value="pdf">electronic</option>
+		<option value="print">hard copy</option>
+	</select>
+	<!--</fieldset>-->
+	<br>
+<!--Personal Info-->
+  <!--<fieldset style="display:inline">-->
+    <legend>Personal information</legend>
+    <div>
+      <label for="first" style="float:center">First name:</label>
+      <input name="first" id="first" type="text" style="float:center" size="27"/>
+    </div>
+    <div>
+      <label for="last" style="float:center">Last name:</label>
+      <input name="last" id="last" type="text" style="float:center" size="27"/>
+    </div>
+  </fieldset>
+  <br>
+  <fieldset style="display:inline">
+    <legend>Address</legend>
+<!--DIV for delivery method = print only-->
+    <div id="print" style="display: none;">
+      <div>
+		<label for="street">Street:</label>
+		<input id="street" name="street" type="text" />
+	  </div>
+      <div>
+		<label for="city">City:</label>
+		<input id="city" name="city" type="text" />
+	  </div>
+      <div>
+		<label for="state">State:</label>
+		<input id="state" name="state" type="text" />
+	  </div>
+      <div>
+		<label for="zip">Zip:</label>
+		<input id="zip" name="zip" type="text" />
+	  </div>
+	</div>
+<!--end print only-->
+<!--DIV for delivery method = both-->
+	<div id="both1" style="display: block;">
+      <label for="street">testStreet:</label>
+      <input id="street" name="street" type="text" />
+      <label for="city">City:</label>
+      <input id="city" name="city" type="text" />
+      <label for="state">State:</label>
+      <input id="state" name="state" type="text" />
+      <label for="zip">Zip:</label>
+      <input id="zip" name="zip" type="text" />
+	</div>
+<!--end both-->
+  </fieldset>
+  <br>
+  <fieldset style="display:inline">
+    <legend>Contact information</legend>
+<!--DIV for delivery method = pdf only-->
+    <div id="pdf" style="display: none;">
+	  <label for="email">eMail:</label>
+      <input id="email" name="email" type="text" />
+      <label for="confirm">Confirm eMail:</label>
+      <input id="confirm" name="confirm" type="text" />
+    </div>
+<!--end pdf only-->
+<!--DIV for delivery method = both-->	
+	<div id="both2" style="display: block;">
+      <label for="email">testeMail:</label>
+      <input id="email" name="email" type="text" />
+      <label for="confirm">Confirm eMail:</label>
+      <input id="confirm" name="confirm" type="text" />
+	</div>
+<!--end both-->
+  </fieldset>
+  <div id="submit" class="required">
+    <input name="Submit" value="Submit" type="submit" />
+  </div>
+</form>
+</center>
+
+
+
+</body>
+</html>

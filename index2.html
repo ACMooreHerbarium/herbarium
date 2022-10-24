@@ -1,0 +1,64 @@
+<html>
+<head>
+<meta HTTP-EQUIV="REFRESH" content="5; url=http://www.herbarium.org/">
+</head>
+<body>
+<center>
+<h1>The A. C. Moore Herbarium homepage has moved!</h1>
+<hr>
+<h3>Please set your link to <a href="http://www.herbarium.org/">http://www.herbarium.org/</a></h3>
+
+
+
+
+<html>
+<head>
+<title>The A. C. Moore Herbarium homepage has moved!</title>
+<script type="text/javascript">
+function display_c(start){
+window.start = parseFloat(start);
+var end = 0 // change this to stop the counter at a higher value
+var refresh=1000; // Refresh rate in milli seconds
+if(window.start >= end ){
+mytime=setTimeout('display_ct()',refresh)
+}
+else {alert("Time Over ");}
+}
+
+function display_ct() {
+// Calculate the number of days left
+var days=Math.floor(window.start / 5);
+// After deducting the days calculate the number of hours left
+var hours = Math.floor((window.start - (days * 5 ))/1)
+// After days and hours , how many minutes are left
+var minutes = Math.floor((window.start - (days * 5 ) - (hours *1 ))/1)
+// Finally how many seconds left after removing days, hours and minutes.
+var secs = Math.floor((window.start - (days * 5 ) - (hours *1 ) - (minutes*1)))
+
+var x = window.start + secs;
+
+
+document.getElementById('ct').innerHTML = x;
+window.start= window.start- 1;
+
+tt=display_c(window.start);
+}
+</script>
+</head>
+
+<br>
+<br>
+
+You will be redirected in &nbsp<font size=+3><b><body onload=display_c(5);>
+<span id='ct' style="background-color: #FFFFFF"></span></b></font>&nbsp seconds...
+
+</body>
+
+</html>
+
+
+
+
+</body>
+</center>
+</html>

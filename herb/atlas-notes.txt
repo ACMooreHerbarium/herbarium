@@ -1,0 +1,70 @@
+atlas notes:
+
+Perhaps we should change Cuthbertia to Callisia?  
+
+where is Helianthus simulans?
+
+
+
+Update Mimosa quadrivalvis to M. microphylla Dry. ? 
+
+Penstemon digitalis v. laevigatus?
+
+Pseudognaphalium??
+
+cenchrus carolinianus ---) cenchrus spinifex?
+
+panicum ---) dichanthelium
+
+polygonum cespitosum ---) polygonum caespitosum ---) persicaria?
+calamintha ---) clinopodium?
+
+Add F. aubertii 
+Add Sarracenia catesbaei
+
+
+Add link to ITIS?
+("Taxonomy / nomenclature, for the most part, follows ....
+Use the Integrated Taxonomic Information System (ITIS) to find ...
+If you don't find the name you're looking for, check synonymity at ...
+
+
+
+-----------------------------------------------------------
+
+summary to date:
+
+- 6520 total shots taken
+
+- 1672 kept and identified
+
+- 980 web-ready photos collected, representing 476 species, or approx. 15% of the flora of S. C.  (based on an estimate of 3100 species in the state)
+
+- 368 linked
+
+- All Atlas pages restructured to accommodate photographs in addition to maps.  This necessitated rewriting the HTML entry for each plant; in the version presently online, each scientific name is a hyperlink to a map, and thus does not accomodate multiple links.  The HTML was re-written using a macro I designed; however, the photo links have to be added by hand.
+
+activities: 
+
+-field photography
+-identification
+-photo editing (photo selection, cropping, etc.)
+-HTML/programming
+
+
+
+Shall we also direct them to our site to view the plant photos taken for children, since this is an "instructional innovation" grant?  Warning: many of these photos suck.  However, they DO serve the purpose for which they were created, and a number of the students commented that these photos were helpful study aids.  Several students even printed them out and made flash cards.  
+
+
+
+
+
+
+IMPORTANT NOTE:
+Tim has his passwords set to expire every 6 months or so ... maybe it's 3 ... anyway, I totally forgot that, tried to upload over the weekend, and of course, my password is dead.  So, uploading a demo is out.  No matter.  I put it on CD.  It will work same as viewing it online.
+
+
+
+Contact info:
+June 30-July 2: GA 912-264-5308 / July 3-7: DC 202-332-7664.
+I have also recently acquired a cell phone: 803-206-7718.

@@ -1,0 +1,253 @@
+<html>
+<head>
+<title>USCH and CLEMS Specify 6 Botany Taxon Tree Bug Fix log</title>
+</head>
+
+<h1>Bug Fix log<br>
+USCH and CLEMS Specify 6 Botany Taxon Tree</h1>
+
+<hr>
+<h2>2010-04-21 Taxon - IsAccepted values updated for synonyms</h2>
+
+<p>Values for IsAccepted were changed to 'NULL' for all synonyms (i.e. any taxon name where AcceptedID=NOT NULL).  This will ensure that preferred taxon names are displayed on determinations using synonymized names.  Note from Specify 6 users' manual:
+<ul>
+  <li>"This prompt can be turned on by choosing <i>Specify >
+Preferences > Trees</i> on a Macintosh or <i>Edit > Preferences
+>Trees</i> on Windows or Linux and checking the Prompt to Replace Taxon with Preferred Taxon box."
+  </li>
+</ul>
+Users of previous versions (prior to April 21, 2010) of the USCH and CLEMS Specify 6 Botany Taxon Tree will need to download the file <a href="UPDATE-to_make_preffered_taxon_work.mdb">UPDATE-to_make_preffered_taxon_work.mdb</a>.  Then within MS Access use an ODBC connection to your MySQL database and import the update query.  Once imported, the update query can be run to update the Taxon table.</p>
+
+<hr>
+<h2>2010-03-08 TaxonTreeDefItem - FullNameSeparator values updated</h2>
+
+<p>Values for FullNameSeparator were changed to a single space for all taxonomic ranks.  This will ensure that binomial combinations will be separated by a space when concatenated (e.g. they will appear as <i>Genus species</i> instead of <i>Genusspecies</i>)</p>
+<p>Special thanks to Steve Baskauf of Vanderbilt University for finding this issue.</p>
+
+<hr>
+<h2>2010-03-05 TaxonTreeDefItem - IsEnforced and IsInFullName values updated</h2>
+
+<p>Values for IsEnforced were changed to Null for several taxonomic ranks allowing more flexibility when chosing ranks for new names added to the tree.</p>
+
+<table border="1">
+<tr>
+	<td>TaxonTreeDefItemID</td>
+	<td>Name</td>
+	<td>RankID</td>
+	<td>IsEnforced-old</td>
+	<td>IsEnforced-new</td>
+	<td>IsInFullName-old</td>
+	<td>IsInFullName-new</td>
+</tr>
+<tr>
+	<td>1</td>
+	<td>Life</td>
+	<td>0</td>
+	<td>-1</td>
+	<td>1</td>
+	<td>-1</td>
+	<td>NULL</td>
+</tr>
+<tr>
+	<td>2</td>
+	<td>Kingdom</td>
+	<td>10</td>
+	<td>-1</td>
+	<td>1</td>
+	<td>-1</td>
+	<td>NULL</td>
+</tr>
+<tr>
+	<td>3</td>
+	<td>Subkingdom</td>
+	<td>20</td>
+	<td>-1</td>
+	<td>NULL</td>
+	<td>-1</td>
+	<td>NULL</td>
+</tr>
+<tr>
+	<td>4</td>
+	<td>Division</td>
+	<td>30</td>
+	<td>-1</td>
+	<td>1</td>
+	<td>-1</td>
+	<td>NULL</td>
+</tr>
+<tr>
+	<td>5</td>
+	<td>Subdivision</td>
+	<td>40</td>
+	<td>-1</td>
+	<td>NULL</td>
+	<td>-1</td>
+	<td>NULL</td>
+</tr>
+<tr>
+	<td>6</td>
+	<td>Class</td>
+	<td>60</td>
+	<td>-1</td>
+	<td>1</td>
+	<td>-1</td>
+	<td>NULL</td>
+</tr>
+<tr>
+	<td>7</td>
+	<td>Subclass</td>
+	<td>70</td>
+	<td>-1</td>
+	<td>NULL</td>
+	<td>-1</td>
+	<td>NULL</td>
+</tr>
+<tr>
+	<td>8</td>
+	<td>Order</td>
+	<td>100</td>
+	<td>-1</td>
+	<td>1</td>
+	<td>-1</td>
+	<td>NULL</td>
+</tr>
+<tr>
+	<td>9</td>
+	<td>Suborder</td>
+	<td>110</td>
+	<td>-1</td>
+	<td>NULL</td>
+	<td>-1</td>
+	<td>NULL</td>
+</tr>
+<tr>
+	<td>10</td>
+	<td>Family</td>
+	<td>140</td>
+	<td>-1</td>
+	<td>1</td>
+	<td>-1</td>
+	<td>NULL</td>
+</tr>
+<tr>
+	<td>11</td>
+	<td>Subfamily</td>
+	<td>150</td>
+	<td>-1</td>
+	<td>NULL</td>
+	<td>-1</td>
+	<td>NULL</td>
+</tr>
+<tr>
+	<td>12</td>
+	<td>Tribe</td>
+	<td>160</td>
+	<td>-1</td>
+	<td>NULL</td>
+	<td>-1</td>
+	<td>NULL</td>
+</tr>
+<tr>
+	<td>13</td>
+	<td>Subtribe</td>
+	<td>170</td>
+	<td>-1</td>
+	<td>NULL</td>
+	<td>-1</td>
+	<td>NULL</td>
+</tr>
+<tr>
+	<td>14</td>
+	<td>Genus</td>
+	<td>180</td>
+	<td>-1</td>
+	<td>1</td>
+	<td>-1</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>15</td>
+	<td>Subgenus</td>
+	<td>190</td>
+	<td>-1</td>
+	<td>NULL</td>
+	<td>-1</td>
+	<td>NULL</td>
+</tr>
+<tr>
+	<td>16</td>
+	<td>Section</td>
+	<td>200</td>
+	<td>-1</td>
+	<td>NULL</td>
+	<td>-1</td>
+	<td>NULL</td>
+</tr>
+<tr>
+	<td>17</td>
+	<td>Subsection</td>
+	<td>210</td>
+	<td>-1</td>
+	<td>NULL</td>
+	<td>-1</td>
+	<td>NULL</td>
+</tr>
+<tr>
+	<td>18</td>
+	<td>Species</td>
+	<td>220</td>
+	<td>-1</td>
+	<td>1</td>
+	<td>-1</td>
+	<td>1</td>
+</tr>
+<tr>
+	<td>19</td>
+	<td>Subspecies</td>
+	<td>230</td>
+	<td>-1</td>
+	<td>NULL</td>
+	<td>-1</td>
+	<td>NULL</td>
+</tr>
+<tr>
+	<td>20</td>
+	<td>Variety</td>
+	<td>240</td>
+	<td>-1</td>
+	<td>NULL</td>
+	<td>-1</td>
+	<td>NULL</td>
+</tr>
+<tr>
+	<td>21</td>
+	<td>Subvariety</td>
+	<td>250</td>
+	<td>-1</td>
+	<td>NULL</td>
+	<td>-1</td>
+	<td>NULL</td>
+</tr>
+<tr>
+	<td>22</td>
+	<td>Forma</td>
+	<td>260</td>
+	<td>-1</td>
+	<td>NULL</td>
+	<td>-1</td>
+	<td>NULL</td>
+</tr>
+<tr>
+	<td>23</td>
+	<td>Subforma</td>
+	<td>270</td>
+	<td>-1</td>
+	<td>NULL</td>
+	<td>-1</td>
+	<td>NULL</td>
+</tr>
+</table>
+
+<br>
+
+</html>

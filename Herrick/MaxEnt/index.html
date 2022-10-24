@@ -1,0 +1,114 @@
+<html>
+<body>
+<center><h1>Herrick's MaxEnt Output</h1></center>
+<hr>
+<h2>Biol 756 Term Paper Fall 2014</h2>
+
+<h3>Potential Effects of the Invasive Tallow Tree <i>Triadica sebifera</i> on the Southeastern US Endemic Tree Species <i>Gordonia lasianthus</i> - 
+Loblolly Bay Under Changing Climate Conditions.</h3>
+
+<p>The following results were generated using <a href="http://www.worldclim.org" target="new">WorldClim</a> data for
+Altitude and the 19 bioclimatic variables from the <a href="http://www.worldclim.org/bioclim" target="new">BioClim</a> dataset.  The
+<a href="http://www2.cesm.ucar.edu/" target="new">Community Earth System Model</a> - Community Atmosphere Model (CESM1-CAM5-1-FV2) was used for
+future climate conditions calculated for the year 2050.  These data were used to calculate predicted distributions under current a future climate
+conditions for Loblolly Bay - <i>Gordonia lasianthus</i> (a species endemic to the Southeastern US) and the introduced, invasive species Chinese
+Tallow - <i>Triadica sebifera</i> (native to Eastern Asia).  Occurrence data for <i>Gordonia</i> were collected from online databases including GBIF,
+SERNEC, and several Southeastern US Herbaria which yielded a total of 76 georeferenced specimen records.  Data for <i>Triadica</i> were obtained
+from EDDMapS which provides primarily observational data only (i.e. not necessarily specimen based records), but is much more robust yielding > 8,000
+records.  We used MaxEnt (details needed here) for all modeling simulations.</p>
+
+<p>Initial models were run separately for each species using occurrence data and the WorldClim/BioClim datasets.  Response curves for these models
+indicate that different climatological variables may affect the predicted distributions for each species.</p>
+
+<p><u>Figures 1 & 2: Output for each of these models</u>
+<br>
+<a href="Gordonia20141209-1/gorlas.html"> Figure 1</a> Predicted distributions for <i>G. lasianthus</i> under current and 2050 climate conditions
+<br>
+<a href="Triadica_20141209/Triadica_sebifera.html">Figure 2</a> Predicted distributions for <i>T. sebifera</i> under current and 2050 climate
+conditions
+</p>
+
+<p>We then tried to test for interaction between the predicted distributions for <i>Triadica</i> and those of <i>Gordonia</i> by adding the output
+from the initial <i>Triadica</i> model to the <i>Gordonia</i> model.  Conveniently, MaxEnt provides the predicted distribution as an ASCII file
+(file format required for environmental layers) and preserves the original dimensions.  Therefore, we simply added the current predicted distribution
+for <i>Triadica</i> to the set of current environmental layers and similarly placed the predicted distribution under future conditions in the set of
+variables included in the year 2050 dataset.  Recognizing that the values in both distribution layers are between 0 and 1, we suspected that the
+model might interpret these conditions as favorable and therefore would potentially increase the number of predicted permissive sites for
+<i>Gordonia</i>.  Comparing the results of this model (fig.3) to those of the 'Gordonia-only' model (fig.1) there appears to be a slight increase in
+permissive sites centered around Fayetteville, NC.</p>
+<br>
+<a href="Gordonia_TriadicaAdded20141210-1/Gordonia_lasianthus.html"> Figure 3</a> Predicted distributions for <i>G. lasianthus</i> under current and
+2050 climate conditions including predicted distributions (positive values) for <i>T. sebifera</i> as an environmental layer
+<br>
+<p>Proposing that an invasive species that behaves like <i>Triadica sebifera</i> could possibly have a beneficial effect on the potential distribution
+of a native species like <i>Gordonia lasianthus</i> which is easily out-competed seems unrealistic.  In an attempt to demonstrate the more realistic
+negative impact that <i>Triadica</i> would have on <i>Gordonia</i> we developed a second model with a modified distribution layer for <i>Triadica</i>.
+Using ArcMap, we imported the predicted distributions for <i>Triadica</i> from the previous trial (fig.2) and calculated the inverse values for all
+cells.  Therefore, all values were changed from between 0 and 1 to between 0 and -1.  This assumes that a highly permissive site for <i>Triadica</i>
+would have an equally negative impact on <i>Gordonia</i>.  This model yielded more realistic predictions and showed a marked decrease in the number
+of permissive sites predicted for <i>Gordonia lasianthus</i>.  These results may indicate that the effects of invasive species coupled with changing
+climate conditions may compound the pressures encountered by narrow endemic species.</p>
+<br>
+<a href="Gordonia_TriadicaAdded20141210-2/Gordonia_lasianthus.html"> Figure 4</a> Predicted distributions for <i>G. lasianthus</i> under current and
+2050 climate conditions including predicted distributions (negative values) for <i>T. sebifera</i> as an environmental layer
+<br>
+<p><u>Figures 5,6, & 7: Output for models using reduced number of BioClim variables based on a Pearson Correlation Coefficient of 0.80 as a cut-off
+threshold</u>
+<br>
+<a href="Gordonia20141212/Gordonia_lasianthus.html"> Figure 5</a> Predicted distributions for <i>G. lasianthus</i> under current and 2050 climate conditions
+<br>
+<a href="Triadica_20141212/Triadica_sebifera.html">Figure 6</a> Predicted distributions for <i>T. sebifera</i> under current and 2050 climate
+conditions
+<br>
+<a href="Gordonia_TriadicaAdded20141212/Gordonia_lasianthus.html">Figure 7</a> Predicted distributions for <i>G. lasianthus</i> under current and
+2050 climate conditions including predicted distributions (negative values) for <i>T. sebifera</i> as an environmental layer</p>
+<br>
+<br>
+<hr>
+<h2>Trial Runs</h2>
+
+<h3><i>Taxodium distichum</i> - Bald Cypress</h3>
+
+<p>The following results were generated using NARR data for Surface Level Geopotential Height and the Monthly Means for Soil Moisture at 0cm,
+Evaporation Rate, and Air Temperature at 2m, for the months of February and August in the year 1979</p>
+
+<a href="T_distichum_1979_02/Taxodium_distichum.html">T. distichum - predicted distribution February 1979</a>
+<br>
+<a href="T_distichum_1979_08/Taxodium_distichum.html">T. distichum - predicted distribution August 1979</a>
+
+<br>
+<br>
+<hr>
+<h2>Wide Ranging Southeastern United States Endemics</h2>
+<p>Longleaf Pine (<i>Pinus palustris</i>) and Loblolly Bay (<i>Gordonia lasianthus</i>) are endemic to the southeastern Atlantic and Gulf Coastal Plains.
+While their ranges (<a href="http://esp.cr.usgs.gov/data/little/pinupalu.pdf" target="new">P. palustris</a>,
+<a href="http://esp.cr.usgs.gov/data/little/gordlasi.pdf" target="new">G. lasianthus</a>) overlap, the two species are only loosely associated with one
+another often as a result of habitat mosaics. Longleaf Pine is found in diverse habitats ranging from xeric sandhills to seasonally-inundated,
+low-relief flatwoods.  Whereas, Loblolly Bay prefers lower elevations in close proximity to water - typically Carolina Bays and pocosins.</p>
+
+<p>The following results were generated using NARR data for Surface Level Geopotential Height and the Monthly Means for Soil Moisture at 0cm,
+Evaporation Rate, and Air Temperature at 2m, for the months of February and August in the year 1979.  We ran 15 replicates using subsampling and
+randomly tested on 25% of the occurrence data for each species. No absence data were included in these runs.  When including bias files to define 
+pseudo absences the models performed poorly.  We are currently evaluating alternative background samples, and collecting additional occurrence data
+in order to improve model performance with the use of absence (or pseudo absence) data.</p>
+
+<a href="P_palustris/pinpal.html">P. palustris - replicated model</a>
+<br>
+<a href="G_lasianthus/gorlas.html">G. lasianthus - replicated model</a>
+
+<br>
+<br>
+<hr>
+<h2>Federally Listed, Narrowly Endemic, and Species with Disjunct Populations in the Southeastern United States</h2>
+<h3>coming soon...</h3>
+<br>
+<center>
+	<figure>
+		<img src="SERNEC_web.jpg">
+		<figcaption>The SouthEast Regional Network of Expertise and Collections (<a href="http://www.sernec.org">SERNEC</a>) defines the region of interest</figcaption>
+	</figure>	
+</center>
+
+<br>
+</body>
+</html>

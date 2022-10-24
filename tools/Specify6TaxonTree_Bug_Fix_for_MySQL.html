@@ -1,0 +1,199 @@
+<html>
+<head>
+<title>USCH and CLEMS Specify 6 Botany Taxon Tree Bug Fix log</title>
+</head>
+
+<h1>Bug Fix log<br>
+USCH and CLEMS Specify 6 Botany Taxon Tree<br>
+MySQL Method (.sql files)</h1>
+
+<hr>
+<h2>2011-08-25 TaxonTreeDefItem - IsEnforced and IsInFullName values updated</h2>
+
+<p>Values for IsEnforced and IsInFullName were updated from NULL values to TRUE/FALSE values for several taxonomic ranks
+allowing more flexibility when chosing ranks for new names added to the tree.  This also permits synonymization,
+reparenting, and merging of infraspecific ranks.  The values should appear as displayed in the table below.
+<a href="SP6.3.03_TAXONTREEDEFITEM_2011-08-25.sql">This</a> replaces the first release of the TaxonTreeDefItem
+Table  .sql file from 2011-08-18. </p>
+
+<table border="1">
+<tr>
+	<td>TaxonTreeDefItemID</td>
+	<td>Name</td>
+	<td>RankID</td>
+	<td>IsEnforced</td>
+	<td>IsInFullName</td>
+</tr>
+<tr>
+	<td>1</td>
+	<td>Life</td>
+	<td>0</td>
+	<td>TRUE</td>
+	<td>FALSE</td>
+</tr>
+<tr>
+	<td>2</td>
+	<td>Kingdom</td>
+	<td>10</td>
+	<td>TRUE</td>
+	<td>FALSE</td>
+</tr>
+<tr>
+	<td>3</td>
+	<td>Subkingdom</td>
+	<td>20</td>
+	<td>FALSE</td>
+	<td>FALSE</td>
+</tr>
+<tr>
+	<td>4</td>
+	<td>Division</td>
+	<td>30</td>
+	<td>TRUE</td>
+	<td>FALSE</td>
+</tr>
+<tr>
+	<td>5</td>
+	<td>Subdivision</td>
+	<td>40</td>
+	<td>FALSE</td>
+	<td>FALSE</td>
+</tr>
+<tr>
+	<td>6</td>
+	<td>Class</td>
+	<td>60</td>
+	<td>TRUE</td>
+	<td>FALSE</td>
+</tr>
+<tr>
+	<td>7</td>
+	<td>Subclass</td>
+	<td>70</td>
+	<td>FALSE</td>
+	<td>FALSE</td>
+</tr>
+<tr>
+	<td>8</td>
+	<td>Order</td>
+	<td>100</td>
+	<td>TRUE</td>
+	<td>FALSE</td>
+</tr>
+<tr>
+	<td>9</td>
+	<td>Suborder</td>
+	<td>110</td>
+	<td>FALSE</td>
+	<td>FALSE</td>
+</tr>
+<tr>
+	<td>10</td>
+	<td>Family</td>
+	<td>140</td>
+	<td>TRUE</td>
+	<td>FALSE</td>
+</tr>
+<tr>
+	<td>11</td>
+	<td>Subfamily</td>
+	<td>150</td>
+	<td>FALSE</td>
+	<td>FALSE</td>
+</tr>
+<tr>
+	<td>12</td>
+	<td>Tribe</td>
+	<td>160</td>
+	<td>FALSE</td>
+	<td>FALSE</td>
+</tr>
+<tr>
+	<td>13</td>
+	<td>Subtribe</td>
+	<td>170</td>
+	<td>FALSE</td>
+	<td>FALSE</td>
+</tr>
+<tr>
+	<td>14</td>
+	<td>Genus</td>
+	<td>180</td>
+	<td>TRUE</td>
+	<td>TRUE</td>
+</tr>
+<tr>
+	<td>15</td>
+	<td>Subgenus</td>
+	<td>190</td>
+	<td>FALSE</td>
+	<td>FALSE</td>
+</tr>
+<tr>
+	<td>16</td>
+	<td>Section</td>
+	<td>200</td>
+	<td>FALSE</td>
+	<td>FALSE</td>
+</tr>
+<tr>
+	<td>17</td>
+	<td>Subsection</td>
+	<td>210</td>
+	<td>FALSE</td>
+	<td>FALSE</td>
+</tr>
+<tr>
+	<td>18</td>
+	<td>Species</td>
+	<td>220</td>
+	<td>TRUE</td>
+	<td>TRUE</td>
+</tr>
+<tr>
+	<td>19</td>
+	<td>Subspecies</td>
+	<td>230</td>
+	<td>FALSE</td>
+	<td>TRUE</td>
+</tr>
+<tr>
+	<td>20</td>
+	<td>Variety</td>
+	<td>240</td>
+	<td>FALSE</td>
+	<td>TRUE</td>
+</tr>
+<tr>
+	<td>21</td>
+	<td>Subvariety</td>
+	<td>250</td>
+	<td>FALSE</td>
+	<td>TRUE</td>
+</tr>
+<tr>
+	<td>22</td>
+	<td>Forma</td>
+	<td>260</td>
+	<td>FALSE</td>
+	<td>TRUE</td>
+</tr>
+<tr>
+	<td>23</td>
+	<td>Subforma</td>
+	<td>270</td>
+	<td>FALSE</td>
+	<td>TRUE</td>
+</tr>
+</table>
+
+<hr>
+<h2>2011-08-22 Taxon - ParentID values updated for species with species as parents</h2>
+
+<p>Values for ParentID were changed to create parent linkage with appropriate parent genera for all species which were
+previously assigned to other species as their parents.  This will ensure proper concatenation of FullName field during
+Taxon Tree Updates.  <a href="SP6.3.03_TAXON_2011-08-22.sql">This</a> replaces the first release of the Taxon Table
+ .sql file from 2011-08-18.</p>
+<hr>
+
+</html>

@@ -1,0 +1,98 @@
+Thu Aug 07 16:16:59 EDT 2014
+MaxEnt version 3.3.3k
+Checking header of F:\CLIMATE_NetCDFs\NetCDFtoRaster\03_ASCII_derivatives\1979_02\air2m_1979_02.asc
+Checking header of F:\CLIMATE_NetCDFs\NetCDFtoRaster\03_ASCII_derivatives\1979_02\evap_1979_02.asc
+Checking header of F:\CLIMATE_NetCDFs\NetCDFtoRaster\03_ASCII_derivatives\1979_02\hgt_surface.asc
+Checking header of F:\CLIMATE_NetCDFs\NetCDFtoRaster\03_ASCII_derivatives\1979_02\soill_1979_02.asc
+Reading samples from Taxodium_distichum.csv
+Read samples: max memory 259522560, total allocated 16252928, free 12138128, used 4114800, increment 4114800
+Converting file F:\CLIMATE_NetCDFs\NetCDFtoRaster\03_ASCII_derivatives\1979_02\air2m_1979_02.asc size 20459, max memory = 259522560
+Reading file air2m_1979_02.asc
+FLOAT, 1166 pixels with data
+readGrid: max memory 259522560, total allocated 16252928, free 10518040, used 5734888, increment 1620088
+Writing file F:\CLIMATE_NetCDFs\NetCDFtoRaster\03_ASCII_derivatives\1979_02\maxent.cache\air2m_1979_02.mxe
+Converting file F:\CLIMATE_NetCDFs\NetCDFtoRaster\03_ASCII_derivatives\1979_02\evap_1979_02.asc size 22109, max memory = 259522560
+Reading file evap_1979_02.asc
+FLOAT, 1166 pixels with data
+readGrid: max memory 259522560, total allocated 16252928, free 13842728, used 2410200, increment -3324688
+Writing file F:\CLIMATE_NetCDFs\NetCDFtoRaster\03_ASCII_derivatives\1979_02\maxent.cache\evap_1979_02.mxe
+Converting file F:\CLIMATE_NetCDFs\NetCDFtoRaster\03_ASCII_derivatives\1979_02\hgt_surface.asc size 20837, max memory = 259522560
+Reading file hgt_surface.asc
+FLOAT, 1166 pixels with data
+readGrid: max memory 259522560, total allocated 16252928, free 13003944, used 3248984, increment 838784
+Writing file F:\CLIMATE_NetCDFs\NetCDFtoRaster\03_ASCII_derivatives\1979_02\maxent.cache\hgt_surface.mxe
+Converting file F:\CLIMATE_NetCDFs\NetCDFtoRaster\03_ASCII_derivatives\1979_02\soill_1979_02.asc size 19253, max memory = 259522560
+Reading file soill_1979_02.asc
+FLOAT, 1144 pixels with data
+readGrid: max memory 259522560, total allocated 16252928, free 12195232, used 4057696, increment 808712
+Writing file F:\CLIMATE_NetCDFs\NetCDFtoRaster\03_ASCII_derivatives\1979_02\maxent.cache\soill_1979_02.mxe
+Extractor: max memory 259522560, total allocated 16252928, free 12145520, used 4107408, increment 49712
+Extracting random background and sample data
+Warning: Sample at -75.97694, 36.85 in Taxodium_distichum.csv is missing some environmental data (e.g. soill_1979_02)
+Warning: Skipping sample at -75.97694, 36.85
+Warning: Sample at -75.98, 36.85 in Taxodium_distichum.csv is missing some environmental data (e.g. soill_1979_02)
+Warning: Skipping sample at -75.98, 36.85
+Warning: Sample at -88.20917, 30.3775 in Taxodium_distichum.csv is missing some environmental data (e.g. soill_1979_02)
+Warning: Skipping sample at -88.20917, 30.3775
+Warning: Sample at -88.11806, 30.25194 in Taxodium_distichum.csv is missing some environmental data (e.g. soill_1979_02)
+Warning: Skipping sample at -88.11806, 30.25194
+Warning: Sample at -88.22916, 30.3825 in Taxodium_distichum.csv is missing some environmental data (e.g. soill_1979_02)
+Warning: Skipping sample at -88.22916, 30.3825
+Warning: Sample at -87.66417, 30.26528 in Taxodium_distichum.csv is missing some environmental data (e.g. air2m_1979_02)
+Warning: Skipping sample at -87.66417, 30.26528 which has no environmental data
+Warning: Sample at -87.33, 30.38 in Taxodium_distichum.csv is missing some environmental data (e.g. air2m_1979_02)
+Warning: Skipping sample at -87.33, 30.38 which has no environmental data
+Warning: Sample at -80.03, 26.68 in Taxodium_distichum.csv is missing some environmental data (e.g. air2m_1979_02)
+Warning: Skipping sample at -80.03, 26.68 which has no environmental data
+Warning: Sample at -80.03, 26.68 in Taxodium_distichum.csv is missing some environmental data (e.g. air2m_1979_02)
+Warning: Skipping sample at -80.03, 26.68 which has no environmental data
+Warning: Sample at -81.5, 24.67 in Taxodium_distichum.csv is missing some environmental data (e.g. soill_1979_02)
+Warning: Skipping sample at -81.5, 24.67
+Warning: Sample at -81.5, 24.67 in Taxodium_distichum.csv is missing some environmental data (e.g. soill_1979_02)
+Warning: Skipping sample at -81.5, 24.67
+Time since start: 14.294
+1144 points with values for all grids
+Adding samples to background in feature space
+Command line used: 
+Command line to repeat: java density.MaxEnt nowarnings noprefixes outputdirectory=F:\MaxEnt_Output projectionlayers=F:\MaxEnt_Output\Projection_Layers samplesfile=F:\03_Sample_species_data\Taxodium_distichum.csv environmentallayers=F:\CLIMATE_NetCDFs\NetCDFtoRaster\03_ASCII_derivatives\1979_02
+Species: Taxodium_distichum
+Layers: air2m_1979_02 evap_1979_02 hgt_surface soill_1979_02
+Layertypes: Continuous Continuous Continuous Continuous
+outputdirectory: F:\MaxEnt_Output
+projectionlayers: F:\MaxEnt_Output\Projection_Layers
+samplesfile: F:\03_Sample_species_data\Taxodium_distichum.csv
+environmentallayers: F:\CLIMATE_NetCDFs\NetCDFtoRaster\03_ASCII_derivatives\1979_02
+
+getSamples: max memory 259522560, total allocated 16252928, free 10879256, used 5373672, increment 1266264
+Making features
+makeFeatures: max memory 259522560, total allocated 16252928, free 10626936, used 5625992, increment 252320
+Taxodium_distichum: 
+Regularization values: linear/quadratic/product: 0.153, categorical: 0.250, threshold: 1.360, hinge: 0.500
+64 samples
+Density: max memory 259522560, total allocated 16252928, free 9466768, used 6786160, increment 1160168
+linearPredictor: max memory 259522560, total allocated 16252928, free 9466768, used 6786160, increment 0
+FeaturedSpace: max memory 259522560, total allocated 16252928, free 9466768, used 6786160, increment 0
+Sequential: max memory 259522560, total allocated 16252928, free 9411928, used 6841000, increment 54840
+Initial loss: 7.042286171939743
+500: time = 0.720000 loss = 6.469450
+Resulting gain: 0.5728363052751897
+Time since start: 16.033
+Projecting...
+Writing file F:\MaxEnt_Output\Taxodium_distichum.asc
+Writing F:\MaxEnt_Output\plots\Taxodium_distichum.png
+Projecting...
+Layer air2m_1979_02 is missing from F:\MaxEnt_Output\Projection_Layers
+java.lang.Exception
+	at density.Utils.logError(Utils.java:195)
+	at density.Utils.popupError(Utils.java:201)
+	at density.Utils.getGridAbsolutePath(Utils.java:85)
+	at density.Project.newGrid(Project.java:74)
+	at density.Project.getGrid(Project.java:43)
+	at density.Project.projectGrid(Project.java:188)
+	at density.Project.doProject(Project.java:90)
+	at density.Runner.start(Runner.java:532)
+	at density.GUI$7.construct(GUI.java:319)
+	at density.SwingWorker$2.run(SwingWorker.java:108)
+	at java.lang.Thread.run(Unknown Source)
+Time since start: 21.88
+Ending
