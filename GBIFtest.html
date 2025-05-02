@@ -1,0 +1,47 @@
+<html>
+<iframe src="https://www.gbif.org/api/widgets/literature/button?publishingOrganizationKey=3124bdd8-b38c-46f0-b354-5e1d2c2cd9d2" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="false" style="width: 140px; height: 24px;"></iframe>
+<iframe src="https://www.gbif.org/api/widgets/datasets/button?publishingOrganizationKey=3124bdd8-b38c-46f0-b354-5e1d2c2cd9d2" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="false" style="width: 140px; height: 24px;"></iframe>
+<iframe src="https://www.gbif.org/api/widgets/occurrences/button?publishingOrganizationKey=3124bdd8-b38c-46f0-b354-5e1d2c2cd9d2" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="false" style="width: 140px; height: 24px;"></iframe>
+<iframe src="https://www.gbif.org/occurrence/search?publishing_org=3124bdd8-b38c-46f0-b354-5e1d2c2cd9d2" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="false" style="width: 140px; height: 24px;"></iframe>
+
+<li>Give JSON response where count = number of specimen records
+<a href="https://api.gbif.org/v1/occurrence/search?publishing_org=3124bdd8-b38c-46f0-b354-5e1d2c2cd9d2">https://api.gbif.org/v1/occurrence/search?publishing_org=3124bdd8-b38c-46f0-b354-5e1d2c2cd9d2</a>
+<li>Give JSON response where count = number of datasets
+<a href="https://api.gbif.org/v1/dataset/search?publishing_org=3124bdd8-b38c-46f0-b354-5e1d2c2cd9d2">https://api.gbif.org/v1/dataset/search?publishing_org=3124bdd8-b38c-46f0-b354-5e1d2c2cd9d2</a>
+<p id="occ">Occurrences</p>
+<script>
+fetch('https://api.gbif.org/v1/occurrence/search?publishing_org=3124bdd8-b38c-46f0-b354-5e1d2c2cd9d2')
+   .then(response => response.json())
+   .then(gbif => console.log(gbif.count))
+	// lists number of occurrences for USCH
+</script>
+
+<script>  
+fetch('https://api.gbif.org/v1/dataset/search?publishing_org=3124bdd8-b38c-46f0-b354-5e1d2c2cd9d2')
+   .then(response => response.json())
+   .then(gbif => console.log(gbif.count))
+   // lists number of datasets for USCH
+</script>
+
+<li>Vascular Plants<a href="https://bionomia.net/dataset/a92de2e1-647c-43f2-a8b7-ab1c1a6453dd">
+<img src="https://api.bionomia.net/dataset/a92de2e1-647c-43f2-a8b7-ab1c1a6453dd/badge.svg" onerror="this.style.display='none'" alt="Bionomia dataset badge" style="width:262px; height:24px; padding-left:10px;"></a>
+<li>Bryophytes<a href="https://bionomia.net/dataset/4eab79ae-b9aa-48f9-a6d2-9aa4adb259ba">
+<img src="https://api.bionomia.net/dataset/4eab79ae-b9aa-48f9-a6d2-9aa4adb259ba/badge.svg" onerror="this.style.display='none'" alt="Bionomia dataset badge" style="width:262px; height:24px; padding-left:10px;"></a>
+<li>Algae<a href="https://bionomia.net/dataset/ed6ad1bd-cdfd-4147-ad22-5ad2a2fcedba">
+<img src="https://api.bionomia.net/dataset/ed6ad1bd-cdfd-4147-ad22-5ad2a2fcedba/badge.svg" onerror="this.style.display='none'" alt="Bionomia dataset badge" style="width:262px; height:24px; padding-left:10px;"></a>
+<li>Fungi<a href="https://bionomia.net/dataset/778e9507-6e77-4c6a-a4e4-56dbff11af88">
+<img src="https://api.bionomia.net/dataset/778e9507-6e77-4c6a-a4e4-56dbff11af88/badge.svg" onerror="this.style.display='none'" alt="Bionomia dataset badge" style="width:262px; height:24px; padding-left:10px;"></a>
+<li>Lichen<a href="https://bionomia.net/dataset/f289d30b-9881-4e1b-a0cf-99fb1df4871a">
+<img src="https://api.bionomia.net/dataset/f289d30b-9881-4e1b-a0cf-99fb1df4871a/badge.svg" onerror="this.style.display='none'" alt="Bionomia dataset badge" style="width:262px; height:24px; padding-left:10px;"></a>
+
+
+
+
+<!--https://www.gbif.org/occurrence/search?publishing_org=3124bdd8-b38c-46f0-b354-5e1d2c2cd9d2
+https://www.gbif.org/dataset/search?publishing_org=3124bdd8-b38c-46f0-b354-5e1d2c2cd9d2
+https://www.gbif.org/resource/search?contentType=literature&publishingOrganizationKey=3124bdd8-b38c-46f0-b354-5e1d2c2cd9d2
+
+
+<iframe src="https://www.gbif.org/api/widgets/literature/latest?gbifDatasetKey=50c9509d-22c7-4a22-a47d-8c48425ef4a7" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="false" style="width: 100%; height: 350px;"></iframe>
+-->
+</html>
